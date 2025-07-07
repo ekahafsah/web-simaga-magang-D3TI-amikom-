@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Login Page Mahasiswa</title>
+  <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-white">
+  <div class="container-fluid vh-100">
+    <div class="row h-100">
+      <!-- panel ungu kiri -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-white text-center" style="background-color: #6A1B9A;">
+        <img src="logo amikom 1.png" alt="Universitas Amikom Logo" class="mb-3" style="width: 150px;" />
+        <h1 class="fw-bold fs-2 mb-0">UNIVERSITAS AMIKOM</h1>
+        <p class="mb-4 fw-semibold">YOGYAKARTA</p>
+        <img src="programing picture no bg 1.png" alt="Object Image" class="mb-4" style="width: 450px; height: auto;" />
+        <h4 class="fw-bold mb-1">SIMAGA D3TI</h4>
+        <p class="mb-0">Sistem Informasi Magang D3 Teknik Informatika</p>
+        <p>Wujudkan Karir Impianmu Melalui Pengalaman Magang Berkualitas</p>
+      </div>
+      <!-- panel putih kanan -->
+      <div class="col-md-6 d-flex flex-column justify-content-center bg-white text-dark px-5">
+        <h3 class="fw-bold mb-2">Selamat Datang</h3>
+        <p class="mb-4">Silakan masuk dengan akun mahasiswa Anda</p>
+        <form>
+          <div class="mb-3">
+            <label for="nim" class="form-label">Nomor Induk Mahasiswa (NIM)</label>
+            <input type="text" class="form-control" id="nim" placeholder="Masukkan NIM Anda (contoh: 21.01.4567)" />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Kata Sandi</label> 
+            <div class="input-group">
+              <input type="password" class="form-control" id="password" placeholder="Masukkan kata sandi" />
+              <button class="btn btn-outline-secondary" type="button" id="togglePassword1" tabindex="-1" aria-label="Toggle password visibility">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
+                  <path d="M13.359 11.238l1.387 1.387a.5.5 0 0 1-.708.708l-1.387-1.387a8.14 8.14 0 0 1-4.651 1.5c-3.314 0-6.13-2.06-7.5-5 1.02-2.1 3.02-3.75 5.5-4.25a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5c-1.5.25-2.75 1-3.5 2a5.978 5.978 0 0 0 3.5 2.5 5.978 5.978 0 0 0 3.5-2.5l1.5 1.5z"/>
+                  <path d="M3.646 3.646a.5.5 0 0 1 .708 0L8 7.293l3.646-3.647a.5.5 0 0 1 .708.708L8.707 8l3.647 3.646a.5.5 0 0 1-.708.708L8 8.707l-3.646 3.647a.5.5 0 0 1-.708-.708L7.293 8 3.646 4.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="rememberMe" />
+            <label class="form-check-label" for="rememberMe">
+              Ingat saya
+            </label>
+          </div>
+          <a href="dashboardmahasiswa.html" class="btn w-100" style="background-color: #6A1B9A; color: white; text-align: center; display: inline-block; padding: 0.375rem 0.75rem; border-radius: 0.375rem; text-decoration: none;">MASUK</a>
+        </form>
+        <p class="text-center mt-4 mb-1">
+          Belum memiliki akun? <a href="registerpage.html" class="text-primary fw-semibold">Daftar</a>
+        </p>
+      
+        <p class="text-center text-muted small mt-5 mb-0 select-none">
+          © 2025 D3 Teknik Informatika Universitas Amikom Yogyakarta
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // tombol password visibility
+    const togglePassword1 = document.getElementById('togglePassword1');
+    const password = document.getElementById('password');
+    togglePassword1.addEventListener('click', function () {
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      this.innerHTML = type === 'password' ? 
+        `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
+          <path d="M13.359 11.238l1.387 1.387a.5.5 0 0 1-.708.708l-1.387-1.387a8.14 8.14 0 0 1-4.651 1.5c-3.314 0-6.13-2.06-7.5-5 1.02-2.1 3.02-3.75 5.5-4.25a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5c-1.5.25-2.75 1-3.5 2a5.978 5.978 0 0 0 3.5 2.5 5.978 5.978 0 0 0 3.5-2.5l1.5 1.5z"/>
+          <path d="M3.646 3.646a.5.5 0 0 1 .708 0L8 7.293l3.646-3.647a.5.5 0 0 1 .708.708L8.707 8l3.647 3.646a.5.5 0 0 1-.708.708L8 8.707l-3.646 3.647a.5.5 0 0 1-.708-.708L7.293 8 3.646 4.354a.5.5 0 0 1 0-.708z"/>
+        </svg>` :
+        `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8z"/>
+          <path d="M8 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+        </svg>`;
+    });
+  </script>
+</body>
+</html>

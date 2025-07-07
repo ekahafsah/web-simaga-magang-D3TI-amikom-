@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sertifikat Magang</title>
+  <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="d-flex vh-100">
+    <!-- Sidebar -->
+    <nav class="bg-white border-end" style="width: 280px;">
+      <div class="p-3 border-bottom d-flex align-items-center">
+        <img src="logo amikom 1.png" alt="Logo" width="32" height="32" class="me-2" />
+        <div>
+          <h6 class="mb-0 fw-bold" style="color: #6A1B9A;">SIMAGA</h6>
+          <small class="text-muted">Magang D3TI</small>
+        </div>
+      </div>
+      <ul class="nav nav-pills flex-column mt-3 px-2">
+        <li class="nav-item mb-2">
+          <a href="dashboardmahasiswa.html" class="nav-link d-flex align-items-center rounded-3 text-dark">
+            <i class="bi bi-grid-fill me-2"></i> Dashboard
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="pendaftaranmagang.html" class="nav-link d-flex align-items-center rounded-3 text-dark">
+            <i class="bi bi-file-earmark-text me-2"></i> Pendaftaran Magang
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="bimbinganmagang.html" class="nav-link d-flex align-items-center rounded-3 text-dark">
+            <i class="bi bi-people me-2"></i> Bimbingan
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="laporanmagang.html" class="nav-link d-flex align-items-center rounded-3 text-dark">
+            <i class="bi bi-journal-text me-2"></i> Laporan Magang
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="sertifikatmagang.html" class="nav-link active d-flex align-items-center rounded-3" style="background-color: #6A1B9A; border-color: #6A1B9A; color: white;" aria-current="page">
+            <i class="bi bi-award me-2"></i> Sertifikat
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div class="flex-grow-1 d-flex flex-column bg-light">
+      <!-- Header -->
+      <header class="d-flex justify-content-between align-items-center p-3 border-bottom" style="background-color: transparent !important;">
+        <div>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="text-end me-3">
+            <div class="fw-semibold">Eka Hafsah Mardiarso</div>
+            <small class="text-muted">24.01.5204</small>
+          </div>
+          <div class="dropdown">
+            <div class="rounded-circle text-white d-flex justify-content-center align-items-center" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 40px; height: 40px; background-color: #6A1B9A; cursor: pointer;">
+              EH
+            </div>
+            <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="profileDropdown" style="min-width: 220px;">
+              <div class="d-flex align-items-center mb-3">
+                <div class="rounded-circle text-white d-flex justify-content-center align-items-center me-3" style="width: 40px; height: 40px; background-color: #6A1B9A; font-weight: 600;">
+                  EH
+                </div>
+                <div>
+                  <div class="fw-semibold">Eka Hafsah Mardiarso</div>
+                  <small class="text-muted">ekahafsah@students.amikom.ac.id</small>
+                </div>
+              </div>
+              <li><a class="dropdown-item d-flex align-items-center" href="profilmahasiswa.html">
+                <i class="bi bi-person me-2"></i> Profil Saya
+              </a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item text-danger d-flex align-items-center" href="roleselectionpage.html">
+                <i class="bi bi-box-arrow-right me-2"></i> Keluar
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Page content -->
+      <main class="p-4 overflow-auto">
+        <h5 class="fw-bold mb-1">Sertifikat Magang</h5>
+        <p class="mb-3 text-muted">Sertifikat dan nilai hasil magang</p>
+
+        <!-- Certificate card -->
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h6 class="fw-semibold mb-0">Sertifikat Magang</h6>
+                <small class="text-muted">PT Teknologi Maju Indonesia</small>
+              </div>
+              <span class="badge bg-success">Tersedia</span>
+            </div>
+            <div class="border rounded p-4" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+              <div class="text-center mb-3">
+                <img src="logo amikom 1.png" alt="Logo Sertifikat" style="max-height: 80px;" />
+              </div>
+              <h5 class="fw-bold text-center mb-1" style="color: #000000;">SERTIFIKAT MAGANG</h5>
+              <p class="text-center mb-1">Diberikan kepada:</p>
+              <h3 class="fw-bold text-center mb-1">Eka Hafsah Mardiarso</h3>
+              <p class="text-center mb-3">NIM: 24.01.5204</p>
+              <p class="text-center mb-3" style="font-size: 0.9rem;">
+                Telah menyelesaikan program magang di PT Teknologi Maju Indonesia sebagai Web Developer selama periode 1 Juli - 30 Agustus 2025 dengan hasil yang memuaskan.
+              </p>
+              <div class="d-flex justify-content-between" style="font-size: 0.85rem;">
+                <div class="text-center">
+                  <div>Yogyakarta, 5 September 2025</div>
+                  <div>Kepala Program Studi</div>
+                  <div class="fw-semibold mt-4">Barka Satya, M.Kom.</div>
+                </div>
+                <div class="text-center">
+                  <div>Yogyakarta, 5 September 2025</div>
+                  <div>Pembimbing Perusahaan</div>
+                  <div class="fw-semibold mt-4">Ir. Hendra Wijaya</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end gap-2 mt-3">
+              <button type="button" class="btn btn-outline-secondary">
+                <i class="bi bi-eye me-1"></i> Lihat Detail
+              </button>
+              <button type="button" class="btn" style="background-color: #6A1B9A; color: white;">
+                <i class="bi bi-download me-1"></i> Download PDF
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nilai Magang card -->
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h6 class="fw-semibold mb-3">Nilai Magang</h6>
+            <div class="table-responsive">
+              <table class="table table-bordered mb-3" style="font-size: 0.875rem;">
+                <thead>
+                  <tr>
+                    <th>Aspek Penilaian</th>
+                    <th>Bobot</th>
+                    <th>Nilai</th>
+                    <th>Nilai Tertimbang</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kemampuan Teknis</td>
+                    <td>30%</td>
+                    <td>85</td>
+                    <td>25.5</td>
+                  </tr>
+                  <tr>
+                    <td>Soft Skills</td>
+                    <td>30%</td>
+                    <td>90</td>
+                    <td>27.0</td>
+                  </tr>
+                  <tr>
+                    <td>Profesionalisme</td>
+                    <td>40%</td>
+                    <td>88</td>
+                    <td>35.2</td>
+                  </tr>
+                  <tr>
+                    <th>Total</th>
+                    <th>100%</th>
+                    <th>-</th>
+                    <th>87.7</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mb-3" style="font-size: 0.875rem;">
+              <strong>Nilai Akhir:</strong> A (Sangat Baik)
+            </div>
+            <div class="mb-0" style="font-size: 0.875rem;">
+              <strong>Komentar Pembimbing:</strong>
+              <p class="mb-0">
+                Mahasiswa menunjukkan performa yang sangat baik selama magang. Memiliki kemampuan teknis yang solid, cepat belajar, dan mampu bekerja dalam tim dengan baik. Direkomendasikan untuk posisi junior developer setelah lulus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

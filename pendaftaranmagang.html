@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pendaftaran Magang</title>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+  <!-- ikon bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body class="bg-light">
+
+  <div class="d-flex vh-100">
+    <!-- Sidebar -->
+    <nav class="bg-white border-end" style="width: 250px;">
+      <div class="p-3 border-bottom d-flex align-items-center">
+        <img src="logo amikom 1.png" alt="Logo" width="32" height="32" class="me-2" />
+        <div>
+          <h6 class="mb-0 fw-bold" style="color: #6A1B9A;">SIMAGA</h6>
+          <small class="text-muted">Magang D3TI</small>
+  </div>
+  </div>
+
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+      <ul class="nav nav-pills flex-column mt-3 px-2">
+        <li class="nav-item mb-2">
+          <a href="dashboardmahasiswa.html" class="nav-link d-flex align-items-center rounded-3 text-dark">
+            <i class="bi bi-grid-fill me-2"></i> Dashboard
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="pendaftaranmagang.html" class="nav-link active d-flex align-items-center rounded-3" style="background-color: #6A1B9A; border-color: #6A1B9A;">
+            <i class="bi bi-file-earmark-text me-2"></i> Pendaftaran Magang
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="bimbinganmagang.html" class="nav-link d-flex align-items-center rounded-3 text-dark">
+            <i class="bi bi-people me-2"></i> Bimbingan
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="laporanmagang.html" class="nav-link d-flex align-items-center rounded-3 text-dark">
+            <i class="bi bi-journal-text me-2"></i> Laporan Magang
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="sertifikatmagang.html" class="nav-link d-flex align-items-center rounded-3 text-dark">
+            <i class="bi bi-award me-2"></i> Sertifikat
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+  <div class="flex-grow-1 d-flex flex-column bg-light">
+      <!-- header -->
+      <header class="d-flex justify-content-between align-items-center p-3 border-bottom" style="background-color: transparent !important;">
+        <div>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="text-end me-3">
+            <div class="fw-semibold">Eka Hafsah Mardiarso</div>
+            <small class="text-muted">24.01.5204</small>
+          </div>
+        <div class="dropdown">
+            <div class="rounded-circle text-white d-flex justify-content-center align-items-center" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 40px; height: 40px; background-color: #6A1B9A; cursor: pointer;">
+              EH
+            </div>
+            <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="profileDropdown" style="min-width: 220px;">
+              <div class="d-flex align-items-center mb-3">
+                <div class="rounded-circle text-white d-flex justify-content-center align-items-center me-3" style="width: 40px; height: 40px; background-color: #6A1B9A; font-weight: 600;">
+                  EH
+                </div>
+                <div>
+                  <div class="fw-semibold">Eka Hafsah Mardiarso</div>
+                  <small class="text-muted">ekahafsah@students.amikom.ac.id</small>
+                </div>
+              </div>
+              <li><a class="dropdown-item d-flex align-items-center" href="profilmahasiswa.html">
+                <i class="bi bi-person me-2"></i> Profil Saya
+              </a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item text-danger d-flex align-items-center" href="roleselectionpage.html">
+                <i class="bi bi-box-arrow-right me-2"></i> Keluar
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Content body -->
+      <main class="p-4 overflow-auto flex-grow-1">
+        <section class="mb-4">
+          <h5 class="fw-bold mb-1">Pendaftaran Magang</h5>
+          <p class="mb-3 text-muted">Lengkapi formulir berikut untuk memdaftar program magang</p>
+          <div class="card">
+            <div class="card-body">
+              <form>
+                <!-- Data Mahasiswa -->
+                <section class="mb-4">
+                  <h6 class="fw-bold mb-3">Data Mahasiswa</h6>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="nim" class="form-label">NIM</label>
+                      <input type="text" class="form-control" id="nim" placeholder="Masukkan Nomor Induk Mahasiswa" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                      <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan Nama Lengkap" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Masukkan Alamat Email" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="noTelp" class="form-label">No. Telepon</label>
+                      <input type="tel" class="form-control" id="noTelp" placeholder="Masukkan nomor telepon" />
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Data Perusahaan -->
+                <section class="mb-4">
+                  <h6 class="fw-bold mb-3">Data Perusahaan</h6>
+                  <div class="mb-3">
+                    <label for="namaPerusahaan" class="form-label">Nama Perusahaan</label>
+                    <input type="text" class="form-control" id="namaPerusahaan" placeholder="Masukkan nama perusahaan" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="alamatPerusahaan" class="form-label">Alamat Perusahaan</label>
+                    <textarea class="form-control" id="alamatPerusahaan" rows="3" placeholder="Masukkan alamat lengkap perusahaan"></textarea>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="namaPembimbing" class="form-label">Nama Pembimbing Perusahaan</label>
+                      <input type="text" class="form-control" id="namaPembimbing" placeholder="Masukkan nama pembimbing" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="kontakPembimbing" class="form-label">Kontak Pembimbing</label>
+                      <input type="text" class="form-control" id="kontakPembimbing" placeholder="Email atau nomor telepon" />
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Informasi Magang -->
+                <section class="mb-4">
+                  <h6 class="fw-bold mb-3">Informasi Magang</h6>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="tanggalMulai" class="form-label">Tanggal Mulai</label>
+                      <input type="date" class="form-control" id="tanggalMulai" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="tanggalSelesai" class="form-label">Tanggal Selesai</label>
+                      <input type="date" class="form-control" id="tanggalSelesai" />
+                    </div>
+                    <div class="col-12">
+                      <label for="posisiMagang" class="form-label">Posisi/Bidang Magang</label>
+                      <input type="text" class="form-control" id="posisiMagang" placeholder="Contoh: Web Developer, UI/UX Designer, dll" />
+                    </div>
+                    <div class="col-12">
+                      <label for="deskripsiPekerjaan" class="form-label">Deskripsi Pekerjaan</label>
+                      <textarea class="form-control" id="deskripsiPekerjaan" rows="4" placeholder="Jelaskan secara singkat tugas dan tanggung jawab yang akan dilakukan selama magang"></textarea>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Dokumen Pendukung -->
+                <section class="mb-4">
+                  <h6 class="fw-bold mb-3">Dokumen Pendukung</h6>
+                  <div class="border rounded p-4 text-center" style="background-color: white;">
+                    <label for="dokumenPendukung" class="d-block mb-3" style="cursor: pointer;">
+                      <i class="bi bi-plus-circle" style="font-size: 2rem; color: #6A1B9A;"></i>
+                    </label>
+                    <input type="file" class="form-control d-none" id="dokumenPendukung" accept=".pdf" />
+                    <div class="text-muted small">Upload Surat Penerimaan dari Perusahaan</div>
+                    <div class="text-muted small">Format PDF, maksimal 2MB</div>
+                  </div>
+                </section>
+
+                <!-- Buttons -->
+                <div class="d-flex justify-content-end gap-2">
+                  <button type="reset" class="btn btn-light">Batal</button>
+                  <button type="submit" class="btn" style="background-color: #6A1B9A; color: white;">Kirim Pendaftaran</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
